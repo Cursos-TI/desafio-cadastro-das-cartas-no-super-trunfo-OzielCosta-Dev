@@ -9,6 +9,7 @@ struct Carta {
     float area;                 // Área em km²
     float pib;                  // PIB em bilhões
     int pontosTuristicos;       // Quantidade de pontos turísticos
+    float densidade = população / area;
 };
 
 int main() {
@@ -40,6 +41,10 @@ int main() {
     printf("Informe o número de pontos turísticos: ");
     scanf("%d", &carta1.pontosTuristicos);
 
+    printf("Densidade populacional:");
+    scanf("%f", &carta1.densidade);
+
+
     // Leitura da segunda carta
     printf("\nCadastro da Carta 2:\n");
 
@@ -64,6 +69,9 @@ int main() {
     printf("Informe o número de pontos turísticos: ");
     scanf("%d", &carta2.pontosTuristicos);
 
+    printf("Densidade populacional:");
+    scanf("%f", &carta2.densidade);
+
     // Exibição das cartas
     printf("\n=== Informações das Cartas ===\n");
 
@@ -75,6 +83,7 @@ int main() {
     printf("Área: %.2f km²\n", carta1.area);
     printf("PIB: %.2f bilhões de reais\n", carta1.pib);
     printf("Número de Pontos Turísticos: %d\n", carta1.pontosTuristicos);
+    printf("Densidade populacional: %f\n", carta1.densidade);
 
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", carta2.estado);
@@ -84,6 +93,8 @@ int main() {
     printf("Área: %.2f km²\n", carta2.area);
     printf("PIB: %.2f bilhões de reais\n", carta2.pib);
     printf("Número de Pontos Turísticos: %d\n", carta2.pontosTuristicos);
+    printf("Densidade populacional: %f\n", carta2.densidade);
+
 
     return 0;
 }
