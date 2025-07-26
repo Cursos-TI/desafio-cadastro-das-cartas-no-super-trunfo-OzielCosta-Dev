@@ -11,8 +11,8 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     printf("Carta 1:\n");
 
-    char Estado, Carta, Nome, Código[50];
-    int população, Número;
+    char Estado[50], Carta[50], Nome[50], Código[50];
+    int população, num;
     float Área, PIB; 
 
     // Cadastro das Cartas:
@@ -23,32 +23,32 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
      printf("Carta 1\n");
-     scanf("%s", &Carta);
+     scanf("%49s", &Carta);
 
      printf("Digite o Estado: \n");
-     scanf("%s", &Estado);
+     scanf("%49s", &Estado);
 
      printf("Digite o Código da Cidade: \n");
-     scanf("%s", &Código);
+     scanf("%49s", &Código);
 
      printf("Digite o nome da Cidade: \n");
-     scanf("%s", &Nome);
+     scanf("%49s", &Nome);
 
      printf("Digite a População em Números \n");
      scanf("%d", &população);
 
      printf("Digite a Área; \n");
-     scanf("%f", &Área);
+     scanf("%6f", &Área);
 
      printf("Digite o PIB; \n");
-     scanf("%f", &PIB);
+     scanf("%6f", &PIB);
 
      printf(" Digite o número de Pontos Turísticos: \n");
-     scanf("%f", &Número);
+     scanf("%6f", &num);
 
      printf("\nCarta 1: %s\nEstado: %s\nCódigo: %s\n", Carta, Estado, Código);
      printf("\nNome: %s\npopulação: %d\nÁrea: %f\nPIB: %f\n", Nome, população, Área, PIB);
-     printf("\nNúmero: %f\n", Número);
+     printf("\nNúmero: %f\n", num);
 
 
     return 0;
