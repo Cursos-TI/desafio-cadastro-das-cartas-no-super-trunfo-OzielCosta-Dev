@@ -9,13 +9,13 @@ struct Carta {
     float area;                 // Área em km²
     float pib;                  // PIB em bilhões
     int pontosTuristicos;       // Quantidade de pontos turísticos
-    float densidade = população / area;
 };
 
 int main() {
     // Declaração de duas cartas
     struct Carta carta1;
     struct Carta carta2;
+    float densidade = população / area;
 
     // Leitura da primeira carta
     printf("Cadastro da Carta 1:\n");
