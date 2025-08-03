@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main() {
+      int opcao;
+
     // --- Carta 1 ---
     char estado, codigo[4], nomeCidade[100]; // Nome da cidade
     unsigned long int populacao; // População do país
@@ -79,6 +81,46 @@ int main() {
     printf("\n===== CARTA 2 =====\n");
     printf("Estado: %c\nCódigo: %s\nCidade: %s\nPopulação: %lu\nÁrea: %.2f km²\nPIB: %.2f bilhões\nPontos Turísticos: %d\nDensidade: %.2f hab/km²\nPIB per capita: %.8f\nSuper poder: %.2f\n",
         estado2, codigo2, nomeCidade2, populacao2, area2, pib2, pontosTuristicos2, densidade2, pibPerCapita2, soma2);
+
+         printf("\n Escolha de 1 a 6 para comparar as cartas:\n");
+          ("\n\n");
+    printf("1. Nomde da Cidade\n");
+    printf("2. População\n");
+    printf("3. Área \n");
+    printf("4. PIB\n");
+    printf("5. Pontos turísticos\n");
+    printf("6. Densidade demográfica\n");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+        case 1:
+            printf("Cidade 1: %s\n", nomeCidade);
+            printf("Cidade 2: %s\n", nomeCidade2);
+            break;
+        case 2:
+            printf("População 1 : %Lu\n", populacao);
+            printf("População2 : %Lu\n", populacao2);
+            break;
+        case 3:
+            printf("Área 1: %.2f km²\n", area);
+            printf("Área 2: %.2f km²\n", area2);
+            break;
+        case 4:
+            printf("PIB 1: %.2f bilhões\n", pib);
+            printf("PIB 2: %.2f bilhões\n", pib2);
+            break;
+        case 5:
+            printf("Pontos turísticos 1: %d\n", pontosTuristicos);
+            printf("Pontos turísticos 2: %d\n", pontosTuristicos2);
+            break;
+        case 6:
+            printf("Densidade demografica 1: %.2f hab/km²\n", densidade);
+            printf("Densidade demográfica 2: %.2f hab/km²\n", densidade2);
+            break;
+        default:
+            printf("Opção inválida. Por favor, escolha uma opção de 1 a 6.\n");
+
+    }
 
     // --- Comparação das cartas ---
     printf("\n===== RESULTADO =====\n");
